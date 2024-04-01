@@ -42,12 +42,13 @@ router.post("/", async (req, res) => {
 	}
 });
 
-router.get("/user/:userId", async (req, res) => {
+router.get("/user", async (req, res) => {
 	try {
-		const userId = parseInt(req.params.userId);
 
 		// Retrieve orders for the specified user
-		const orders = await OrderRepository.getByUserId(userId);
+		// @ts-ignore
+
+		const orders = await OrderRepository.getByUserId(req.user?.user.id);
 
 		return res.json({
 			error: false,
@@ -64,18 +65,51 @@ router.get("/user/:userId", async (req, res) => {
 	}
 });
 
-router.get("/:bookId", async (req, res) => {
+router.get("/:orderId", async (req, res) => {
 	try {
-		const bookId = parseInt(req.params.bookId);
+		const orderId = parseInt(req.params.orderId);
 
 		// Retrieve orders for the specified book
-		const orders = await OrderRepository.getByBookId(bookId);
+		const order = await OrderRepository.get(orderId);
+		if (!order) return res.status(404).json({
+			error: true,
+			message: `Order with id ${orderId} doesn't exist`,
+			data: null,
+		});
 
 		return res.json({
 			error: false,
-			message: "Orders retrieved successfully",
-			data: orders
+			message: "Order retrieved successfully",
+			data: order
 		});
+	} catch (error) {
+		console.error("Error retrieving order:", error);
+		return res.status(500).json({
+			error: true,
+			message: "Internal server error",
+			data: null
+		});
+	}
+});
+
+router.delete("/:orderId", async (req, res) => {
+	try {
+		const orderId = parseInt(req.params.orderId);
+
+		// Retrieve orders for the specified book
+		const canceled = await OrderRepository.cancel(orderId);
+		if (!canceled) return res.json({
+			error: true,
+			message: "Failed to cancel order",
+			data: null,
+		});
+
+		return res.json({
+			error: false,
+			message: "Orders canceled successfully",
+			data: canceled
+		});
+
 	} catch (error) {
 		console.error("Error retrieving orders:", error);
 		return res.status(500).json({

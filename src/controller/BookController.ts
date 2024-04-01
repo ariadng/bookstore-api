@@ -1,5 +1,6 @@
-import { BookRepository } from '@/repository';
-import express from 'express';
+import { BookRepository, OrderRepository } from '@/repository';
+import { AuthGuard } from '@/service/AuthMiddleware';
+import express, { Request, Response } from 'express';
 const router = express.Router();
 
 // Get all books
@@ -96,6 +97,60 @@ router.get("/:id", async (req, res) => {
 			error: false,
 			message: `Get book with id ${id} success`,
 			data: book,
+		});
+
+	}
+
+	catch (error) {
+		return res.json({
+			error: true,
+			status: 400,
+			message: "Oops, there is an error",
+			data: error,
+		});
+	}
+
+});
+
+// Order a book
+router.post("/:id/order", AuthGuard, async (req: Request, res: Response) => {
+
+	try {
+		const { id } = req.params;
+
+		if (isNaN(Number(id))) return res.json({
+			error: true,
+			message: `Id ${id} is not valid`,
+			data: null,
+		});
+
+		const book = await BookRepository.get(Number(id));
+
+		if (!book) return res.json({
+			error: true,
+			message: `There is no book with id ${id}`,
+			data: null,
+		});
+		
+		// @ts-ignore
+		if (book.price > req.user.user.points) return res.json({
+			error: true,
+			message: `You don't have enough point`,
+			data: null,
+		});
+
+		// @ts-ignore
+		const order = await OrderRepository.create(req.user.user.id, book.id, book.price);
+		if (!order) return res.json({
+			error: true,
+			message: `Failed to create order`,
+			data: null,
+		});
+
+		return res.json({
+			error: false,
+			message: `Create order success`,
+			data: order,
 		});
 
 	}

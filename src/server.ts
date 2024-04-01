@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import { AuthController, BookController, OrderController, UserController } from './controller';
+import { AuthGuard } from './service/AuthMiddleware';
 
 //===============
 // Configurations
@@ -38,16 +39,12 @@ function loadRoutes(app: Express) {
 	// Serve the back-end
 	app.use("/auth", AuthController);
 	app.use("/book", BookController);
-	app.use("/order", OrderController);
-	app.use("/user", UserController);
+	app.use("/order", AuthGuard, OrderController);
 
 	// Basic hello world
 	app.get("/", (req, res) => {
 		return res.send("Bookflix says hello to you!");
 	});
-
-	// app.use("/profile", ProfileRouter);
-	// app.use("/user", UserRouter);
 
 	// Serve static files
 	app.use('/uploads', express.static(path.join(__dirname, './uploads')));

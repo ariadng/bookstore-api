@@ -6,7 +6,7 @@ import { DateTime } from "luxon";
 export const AuthGuard = [
 
 	// Decode auth JWT token
-	(req: Request, res: Response, next: NextFunction) => {
+	async (req: Request, res: Response, next: NextFunction) => {
 
 		try {
 			const authorization = req.headers["authorization"];
@@ -17,13 +17,24 @@ export const AuthGuard = [
 				data: null,
 			});
 			const token = authorization.replace("Bearer", "").trim();
-			const user = jwt.verify(token, process.env.APP_SECRET || "");
+			const jwtUser = jwt.verify(token, process.env.APP_SECRET || "");
+			if (!jwtUser) return res.json({
+				error: true,
+				status: 401,
+				message: "Authorization failed",
+				data: null,
+			});
+
+			// @ts-ignore
+			const user = await UserRepository.getById(jwtUser.userId);
 			if (!user) return res.json({
 				error: true,
 				status: 401,
 				message: "Authorization failed",
 				data: null,
 			});
+
+
 			req.user = user;
 			next();
 		}
@@ -59,8 +70,6 @@ export const AuthGuard = [
 			
 			// Validate token data
 			const userId = jwtUser.id;
-			
-			
 			const user = await UserRepository.getById(userId);
 
 			if (!user) return res.json({

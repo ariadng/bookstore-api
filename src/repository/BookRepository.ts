@@ -1,6 +1,5 @@
 import { PrismaClient } from "@prisma/client";
 import { Book } from "../entity/Book";
-import books from "../sample/books.json";
 
 const prisma = new PrismaClient();
 
@@ -16,7 +15,11 @@ export class BookRepository {
 	}
 
 	public static async get(id: number): Promise<Book | null> {
-		return books.find((book: Book) => book.id === id) ?? null;
+		return prisma.book.findFirst({
+			where: {
+				id: id,
+			}
+		});
 	}
 
 	public static async search(query: string, page: number = 1, countPerPage: number = 10) {
