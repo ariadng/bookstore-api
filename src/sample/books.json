@@ -4,7 +4,7 @@
 		"title": "To Kill a Mockingbird",
 		"writer": "Harper Lee",
 		"description": "A gripping, heart-wrenching, and wholly remarkable tale of coming-of-age in a South poisoned by virulent prejudice.",
-		"cover": "",
+		"cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg/330px-To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg",
 		"price": "20",
 		"tags": [
 			"fiction"
@@ -15,7 +15,7 @@
 		"title": "1984",
 		"writer": "George Orwell",
 		"description": "A dystopian social science fiction novel and cautionary tale about the dangers of totalitarianism.",
-		"cover": "",
+		"cover": "https://upload.wikimedia.org/wikipedia/en/5/51/1984_first_edition_cover.jpg",
 		"price": "15",
 		"tags": [
 			"fiction",
@@ -27,7 +27,7 @@
 		"title": "Pride and Prejudice",
 		"writer": "Jane Austen",
 		"description": "A romantic novel of manners, focusing on the manners and morality of the British upper class.",
-		"cover": "",
+		"cover": "https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9781805479826_p0_v1_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D",
 		"price": "25",
 		"tags": [
 			"fiction"
@@ -38,7 +38,7 @@
 		"title": "Sapiens: A Brief History of Humankind",
 		"writer": "Yuval Noah Harari",
 		"description": "Explores the history of Homo sapiens and the impact of Homo sapiens on the world.",
-		"cover": "",
+		"cover": "https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780062316110_p0_v5_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D",
 		"price": "30",
 		"tags": [
 			"non-fiction",
@@ -50,7 +50,7 @@
 		"title": "The Great Gatsby",
 		"writer": "F. Scott Fitzgerald",
 		"description": "A novel portraying the extravagant lifestyle of the wealthy during the Roaring Twenties.",
-		"cover": "",
+		"cover": "https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780743273565_p0_v14_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D",
 		"price": "18",
 		"tags": [
 			"fiction"
@@ -61,7 +61,7 @@
 		"title": "The Catcher in the Rye",
 		"writer": "J.D. Salinger",
 		"description": "A story about a teenager named Holden Caulfield's disillusionment with the adult world.",
-		"cover": "",
+		"cover": "https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780316769174_p0_v1_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D",
 		"price": "22",
 		"tags": [
 			"fiction",
@@ -73,7 +73,7 @@
 		"title": "The Origin of Species",
 		"writer": "Charles Darwin",
 		"description": "Presents Darwin's theory of evolution by natural selection.",
-		"cover": "",
+		"cover": "https://prodimage.images-bn.com/pimages/9780375751462_p0_v1_s600x595.jpg",
 		"price": "28",
 		"tags": [
 			"non-fiction",
@@ -85,7 +85,7 @@
 		"title": "The Diary of a Young Girl",
 		"writer": "Anne Frank",
 		"description": "The diary kept by Anne Frank while she was in hiding during the Nazi occupation of the Netherlands.",
-		"cover": "",
+		"cover": "https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780307594006_p0_v1_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B300x10000%5D&sink=format%5Bwebp%5D",
 		"price": "17",
 		"tags": [
 			"non-fiction"
@@ -96,7 +96,7 @@
 		"title": "Brave New World",
 		"writer": "Aldous Huxley",
 		"description": "A dystopian novel about a future society controlled by technology.",
-		"cover": "",
+		"cover": "https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780060850524_p0_v4_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D",
 		"price": "12",
 		"tags": [
 			"fiction",
@@ -108,7 +108,7 @@
 		"title": "The Hobbit",
 		"writer": "J.R.R. Tolkien",
 		"description": "A fantasy novel about the quest of a home-loving hobbit.",
-		"cover": "",
+		"cover": "https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780547928227_p0_v4_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D",
 		"price": "24",
 		"tags": [
 			"fiction"
@@ -119,7 +119,7 @@
 		"title": "The Bell Jar",
 		"writer": "Sylvia Plath",
 		"description": "A semi-autobiographical novel about a young woman's mental breakdown.",
-		"cover": "",
+		"cover": "https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780060837020_p0_v2_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D",
 		"price": "13",
 		"tags": [
 			"fiction",
@@ -131,7 +131,7 @@
 		"title": "The Art of War",
 		"writer": "Sun Tzu",
 		"description": "A treatise on military strategy, also known as a guide to tactics, maneuvering, and discipline.",
-		"cover": "",
+		"cover": "https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780813319513_p0_v4_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D",
 		"price": "21",
 		"tags": [
 			"non-fiction"
@@ -142,7 +142,7 @@
 		"title": "A Brief History of Time",
 		"writer": "Stephen Hawking",
 		"description": "A popular science book about cosmology and the universe's origin.",
-		"cover": "",
+		"cover": "https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780553380163_p0_v4_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D",
 		"price": "16",
 		"tags": [
 			"non-fiction",
@@ -154,7 +154,7 @@
 		"title": "The Alchemist",
 		"writer": "Paulo Coelho",
 		"description": "A novel about a young Andalusian shepherd in search of his treasure.",
-		"cover": "",
+		"cover": "https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780062315007_p0_v2_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D",
 		"price": "27",
 		"tags": [
 			"fiction"
@@ -165,7 +165,7 @@
 		"title": "Moby-Dick",
 		"writer": "Herman Melville",
 		"description": "A novel about the voyage of the whaling ship Pequod.",
-		"cover": "",
+		"cover": "https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780198853695_p0_v2_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B300x10000%5D&sink=format%5Bwebp%5D",
 		"price": "19",
 		"tags": [
 			"fiction"
@@ -176,7 +176,7 @@
 		"title": "The Road",
 		"writer": "Cormac McCarthy",
 		"description": "A post-apocalyptic novel about a father and son's journey across a devastated landscape.",
-		"cover": "",
+		"cover": "https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780307387899_p0_v7_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D",
 		"price": "11",
 		"tags": [
 			"fiction"
@@ -187,7 +187,7 @@
 		"title": "The Fountainhead",
 		"writer": "Ayn Rand",
 		"description": "A novel about an individualistic young architect who refuses to compromise his artistic and personal vision.",
-		"cover": "",
+		"cover": "https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780452286375_p0_v3_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D",
 		"price": "29",
 		"tags": [
 			"fiction"
@@ -198,7 +198,7 @@
 		"title": "Lord of the Flies",
 		"writer": "William Golding",
 		"description": "A novel about a group of British boys stranded on an uninhabited island and their disastrous attempt to govern themselves.",
-		"cover": "",
+		"cover": "https://prodimage.images-bn.com/pimages/9780399501487_p0_v3_s600x595.jpg",
 		"price": "14",
 		"tags": [
 			"fiction"
@@ -209,7 +209,7 @@
 		"title": "Crime and Punishment",
 		"writer": "Fyodor Dostoevsky",
 		"description": "A novel about a man who believes himself to be above the law, and his subsequent mental and moral deterioration.",
-		"cover": "",
+		"cover": "https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780140449136_p0_v2_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D",
 		"price": "26",
 		"tags": [
 			"fiction"
@@ -220,7 +220,7 @@
 		"title": "Walden",
 		"writer": "Henry David Thoreau",
 		"description": "A memoir by transcendentalist Henry David Thoreau about his two years and two months in a small cabin he built near Walden Pond.",
-		"cover": "",
+		"cover": "https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9781604592948_p0_v2_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D",
 		"price": "23",
 		"tags": [
 			"non-fiction",
