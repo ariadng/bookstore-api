@@ -1,4 +1,5 @@
 import { User } from "@/entity";
+import { prisma } from "@/service/Prisma";
 import { PrismaClient } from "@prisma/client";
 import bcrypt from 'bcrypt';
 
@@ -6,8 +7,6 @@ export class UserRepository {
 	// Function to create a new user
 	public static async create(email: string, password: string, name: string): Promise<User> {
 
-		const prisma = new PrismaClient();
-		
 		const newUser = await prisma.user.create({
 			data: {
 				email: email ? email : "",
@@ -23,8 +22,6 @@ export class UserRepository {
 
 	// Function to retrieve a user by ID
 	public static async getById(id: number): Promise<User | null> {
-
-		const prisma = new PrismaClient();
 
 		const user = await prisma.user.findFirst({
 			where: {
@@ -44,7 +41,6 @@ export class UserRepository {
 
 	// Function to retrieve a user by email
 	public static async getByEmail(email: string): Promise<User | null> {
-		const prisma = new PrismaClient();
 
 		const user = await prisma.user.findFirst({
 			where: {
@@ -64,7 +60,6 @@ export class UserRepository {
 
 	// Function to check credentials
 	public static async login(email: string, password: string): Promise<User | null> {
-		const prisma = new PrismaClient();
 
 		const user = await prisma.user.findFirst({
 			where: {

@@ -1,6 +1,7 @@
 import { PrismaClient, Session } from "@prisma/client";
 import { DateTime } from "luxon";
 import jwt from 'jsonwebtoken';
+import { prisma } from "./Prisma";
 
 export class AuthService {
 
@@ -19,7 +20,6 @@ export class AuthService {
 
 	// Validate access token
 	async validateAccessToken(token: string): Promise<boolean> {
-		const prisma = new PrismaClient();
 		const session = await prisma.session.findFirst({
 			where: {
 				token: token,
@@ -31,7 +31,6 @@ export class AuthService {
 
 	// Get session from access token
 	async getSessionFromAccessToken(token: string): Promise<Session | null> {
-		const prisma = new PrismaClient();
 		const session = await prisma.session.findFirst({
 			where: {
 				token: token,
@@ -41,9 +40,8 @@ export class AuthService {
 	}
 
 	public static async createSession(userId: number): Promise<Session | null> {
-		const prisma = new PrismaClient();
 
-		const token = jwt.sign({ userId: userId }, (process.env.APP_SECRET ?? "rahasia"), { expiresIn: '1h' });
+		const token = jwt.sign({ userId: userId, salt: DateTime.now() }, (process.env.APP_SECRET ?? "rahasia"), { expiresIn: '24h' });
 		const expiration = DateTime.now().plus({ weeks: 1 }).toJSDate().toISOString();
 		const session = await prisma.session.create({
 			data: {

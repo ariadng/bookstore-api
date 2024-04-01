@@ -1,8 +1,7 @@
 import { Order } from "@/entity";
 import { PrismaClient } from "@prisma/client";
 import { UserRepository } from "./UserRepository";
-
-const prisma = new PrismaClient();
+import { prisma } from "@/service/Prisma";
 
 export class OrderRepository {
 
