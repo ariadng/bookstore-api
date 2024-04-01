@@ -1,7 +1,9 @@
-import express from 'express';
+import express, { Request, Response } from 'express';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import { UserRepository } from '../repository/UserRepository';
+import { AuthService } from '@/service/AuthService';
+import { AuthGuard } from '@/service/AuthMiddleware';
 
 const router = express.Router();
 
@@ -35,10 +37,22 @@ router.post("/register", async (req, res) => {
 		// Create the user
 		const newUser = await UserRepository.create(email, hashedPassword, name);
 
+		const session = await AuthService.createSession(newUser.id);
+		if (!session) {
+			return res.status(401).json({
+				error: true,
+				message: "Failed to create session",
+				data: null
+			});
+		}
+
 		return res.status(201).json({
 			error: false,
 			message: "User registered successfully",
-			data: newUser
+			data: {
+				user: newUser,
+				token: session.token
+			}
 		});
 	} catch (error) {
 		console.error("Error registering user:", error);
@@ -65,7 +79,7 @@ router.post("/login", async (req, res) => {
 		}
 
 		// Retrieve user by email
-		const user = await UserRepository.getByEmail(email);
+		const user = await UserRepository.login(email, password);
 		if (!user) {
 			return res.status(401).json({
 				error: true,
@@ -74,27 +88,24 @@ router.post("/login", async (req, res) => {
 			});
 		}
 
-		// Compare passwords
-		const passwordMatch = await bcrypt.compare(password, user.password);
-		if (!passwordMatch) {
+		// Create session
+		const session = await AuthService.createSession(user.id);
+		if (!session) {
 			return res.status(401).json({
 				error: true,
-				message: "Invalid email or password",
+				message: "Failed to create session",
 				data: null
 			});
 		}
-
-		// Generate JWT token
-		const token = jwt.sign({ userId: user.id }, (process.env.JWT_SECRET ?? "rahasia"), { expiresIn: '1h' });
 
 		return res.json({
 			error: false,
 			message: "Login successful",
 			data: {
-				token,
-				user
+				token: session.token,
 			}
 		});
+		
 	} catch (error) {
 		console.error("Error logging in:", error);
 		return res.status(500).json({
@@ -103,6 +114,18 @@ router.post("/login", async (req, res) => {
 			data: null
 		});
 	}
+});
+
+// Get current authenticated user data
+router.get("/profile", AuthGuard, (req: Request, res: Response) => {
+	// @ts-ignore
+	return res.json({
+		error: false,
+		status: 200,
+		message: "Get authenticated user profile success",
+		// @ts-ignore
+		data: req.user.user,
+	});
 });
 
 export const AuthController = router;

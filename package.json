@@ -7,6 +7,9 @@
 		"start": "npm install && npm run build && NODE_ENV=production pm2 start -f ./build/index.js",
 		"build": "rm -rf build/ && tsc && node ./scripts/tsc/path.js",
 		"db:start": "docker compose up -d",
+		"db:migrate": "prisma migrate dev",
+		"db:seed": "prisma db seed",
+		"db:generate": "prisma generate",
 		"db:test": "node ./scripts/database/test.js",
 		"dev": "nodemon -r tsconfig-paths/register ./src/index.ts",
 		"test": "echo \"Error: no test specified\" && exit 1"
@@ -14,6 +17,7 @@
 	"author": "",
 	"license": "UNLICENSED",
 	"dependencies": {
+		"@prisma/client": "^5.11.0",
 		"bcrypt": "^5.1.1",
 		"body-parser": "^1.20.2",
 		"cors": "^2.8.5",
@@ -33,6 +37,7 @@
 		"@types/node": "^20.9.0",
 		"@types/passport": "^1.0.15",
 		"nodemon": "^3.0.1",
+		"prisma": "^5.11.0",
 		"ts-node": "^10.9.1",
 		"tsconfig-paths": "^4.2.0",
 		"typescript": "^5.2.2"

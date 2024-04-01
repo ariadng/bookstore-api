@@ -4,6 +4,6 @@ export interface Book {
 	writer: string;
 	description: string;
 	cover: string;
-	price: string;
+	price: number;
 	tags: string[];
 }

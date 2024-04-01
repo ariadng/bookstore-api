@@ -1,30 +1,11 @@
-version: "3.8"
-services:
-  mongodb:
-    image: mongo
-    container_name: restay_db
-    environment:
-      - MONGO_INITDB_DATABASE=restay
-      - MONGO_INITDB_ROOT_USERNAME=restayuser
-      - MONGO_INITDB_ROOT_PASSWORD=restaypassword
-      - PUID=1000
-      - PGID=1000
-    volumes:
-      - ./data/db:/data/db
-      - ./scripts/database/init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
-    ports:
-      - 27017:27017
-    restart: "unless-stopped"
+version: '3.9'
 
-  mongo-express:
-    image: mongo-express
+services:
+  db:
+    image: postgres:latest
     restart: always
-    container_name: mongo_ui
-    ports:
-      - 8081:8081
     environment:
-      - ME_CONFIG_MONGODB_ADMINUSERNAME=restayuser
-      - ME_CONFIG_MONGODB_ADMINPASSWORD=restaypassword
-      - ME_CONFIG_MONGODB_URL=mongodb://restayuser:restaypassword@mongodb:27017/
-      - ME_CONFIG_MONGODB_AUTH_USERNAME=pampam
-      - ME_CONFIG_MONGODB_AUTH_PASSWORD=Parampam123
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '6543:5432'
