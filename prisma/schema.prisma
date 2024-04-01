@@ -38,7 +38,7 @@ model Session {
 
 model Book {
   id          Int       @default(autoincrement()) @id
-  name        String
+  title       String
   writer      String
   description String
   cover       String
