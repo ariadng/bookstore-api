@@ -1,4 +1,4 @@
-import { UserRepository } from "@/repository";
+import { UserRepository } from "../repository";
 import { NextFunction, Request, Response } from "express";
 import jwt from 'jsonwebtoken';
 import { DateTime } from "luxon";
