@@ -1,6 +1,5 @@
 import { User } from "@/entity";
-import { prisma } from "@/service/Prisma";
-import { PrismaClient } from "@prisma/client";
+import { prisma } from "../service/Prisma";
 import bcrypt from 'bcrypt';
 
 export class UserRepository {

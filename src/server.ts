@@ -1,9 +1,9 @@
 import path from 'path';
-import express, { Express, Request, Response } from 'express';
+import express, { Express } from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import bodyParser from 'body-parser';
-import { AuthController, BookController, OrderController, UserController } from './controller';
+import { AuthController, BookController, OrderController } from './controller';
 import { AuthGuard } from './service/AuthMiddleware';
 
 //===============
@@ -20,9 +20,6 @@ async function config(app: Express) {
 
 	// CORS
 	app.use(cors());
-
-	// Database connection
-	// await connectToMongoDB();
 
 	// Static Files
 	app.use('/static', express.static(path.join(__dirname, '../files')));
