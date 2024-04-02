@@ -1,9 +1,8 @@
 import express, { Request, Response } from 'express';
 import bcrypt from 'bcrypt';
-import jwt from 'jsonwebtoken';
 import { UserRepository } from '../repository/UserRepository';
-import { AuthService } from '@/service/AuthService';
-import { AuthGuard } from '@/service/AuthMiddleware';
+import { AuthService } from '../service/AuthService';
+import { AuthGuard } from '../service/AuthMiddleware';
 
 const router = express.Router();
 

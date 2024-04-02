@@ -1,4 +1,4 @@
-import { PrismaClient, Session } from "@prisma/client";
+import { Session } from "@prisma/client";
 import { DateTime } from "luxon";
 import jwt from 'jsonwebtoken';
 import { prisma } from "./Prisma";

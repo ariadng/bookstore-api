@@ -1,4 +1,4 @@
-import { User } from "@/entity";
+import { User } from "../entity";
 import { prisma } from "../service/Prisma";
 import bcrypt from 'bcrypt';
 

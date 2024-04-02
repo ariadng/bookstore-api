@@ -1,6 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 import { Book } from "../entity/Book";
-import { prisma } from "@/service/Prisma";
+import { prisma } from "../service/Prisma";
 
 export class BookRepository {
 

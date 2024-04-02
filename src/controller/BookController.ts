@@ -1,5 +1,5 @@
-import { BookRepository, OrderRepository } from '@/repository';
-import { AuthGuard } from '@/service/AuthMiddleware';
+import { BookRepository, OrderRepository } from '../repository';
+import { AuthGuard } from '../service/AuthMiddleware';
 import express, { Request, Response } from 'express';
 const router = express.Router();
 
